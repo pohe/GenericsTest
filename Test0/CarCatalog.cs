@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Test0
 {
+    
     public class CarCatalog
     {
         private Dictionary<string, Car> _objects;

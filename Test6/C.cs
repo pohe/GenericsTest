@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 namespace Test6
 {
     //The keywords in and out in make our intention explicit
-    public interface ICGet <out T>
+    public interface ICGet < out T>
     {
         T Get();
     }
 
-    public interface ICSet<in T>
+    public interface ICSet< in T>
     {
         void Set(T t);
     }

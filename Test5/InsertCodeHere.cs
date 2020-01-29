@@ -13,7 +13,7 @@ namespace Test5
             //Is this valid ?
             //C<Animal> ca = new C<Dog>();
 
-            //ca.Get();
+            ca.Get();
             // This should be ok!
             // Only an object of type Dog can be returnes, and since Dog is a sub¬class of 
             // Animal, this is a perfectly valid object to return in response 

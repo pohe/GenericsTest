@@ -16,7 +16,16 @@ namespace Test7
             //List<int> integers = new List<int>();
             //integers.Add(12);
             //integers.Add(10);
+            //foreach (int x in integers)
+            //{
+            //    Console.WriteLine(x);
+            //}
             //integers.Sort();
+            //foreach(int x in integers)
+            //{
+            //    Console.WriteLine(x);
+            //}
+
             Dog d1 = new Dog("King", 70);
             Dog d2 = new Dog("Spot", 30);
             List<Animal> animals = new List<Animal>();
@@ -26,27 +35,28 @@ namespace Test7
             Console.WriteLine("Before sorting");
             printOutAnimals(animals);
 
-            if (d1.CompareTo(d2) < 0)
-                Console.WriteLine($"d1 {d1.Weight} er mindre end d2 {d2.Weight}");
-            else
-            {
-                Console.WriteLine($"d1 {d1.Weight}er større end eller lig d2 {d2.Weight}");
-            }
-
+            //if (d1.CompareTo(d2) < 0)
+            //    Console.WriteLine($"d1 {d1.Weight} er mindre end d2 {d2.Weight}");
+            //else
+            //{
+            //    Console.WriteLine($"d1 {d1.Weight}er større end eller lig d2 {d2.Weight}");
+            //}
+            Console.WriteLine("Sortering ved vægt");
             animals.Sort();
             printOutAnimals(animals);
-            if (d1.CompareTo(d2)>0)
-                Console.WriteLine("Default sammenligning");
-            IComparer<Animal> comparer = new AnimalComparerByName();
-            if (comparer.Compare(d1,d2)>0)
-                Console.WriteLine($"d1s navn er alfabetisk før d2s navn");
-            else
-                Console.WriteLine($"d2s navn er alfabetisk før d1s navn");
-            animals.Sort(comparer);
+            //if (d1.CompareTo(d2)>0)
+            //    Console.WriteLine("Default sammenligning");
+            //IComparer<Animal> comparer = new AnimalComparerByName();
+            //if (comparer.Compare(d1,d2)>0)
+            //    Console.WriteLine($"d1s navn er alfabetisk før d2s navn");
+            //else
+            //    Console.WriteLine($"d2s navn er alfabetisk før d1s navn");
+            //animals.Sort(comparer);
             //IComparer<Animal> comparer = new AnimalComparerByWeightLowToHigh();
             //animals.Sort(comparer);
-            //IComparer<Animal> comparer = new AnimalComparerByName();
-            //animals.Sort(comparer);
+            Console.WriteLine("Sortering ved navn");
+            IComparer<Animal> comparer1 = new AnimalComparerByName();
+            animals.Sort(comparer1);
             Console.WriteLine("After sorting");
             printOutAnimals(animals);
 

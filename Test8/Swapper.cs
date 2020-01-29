@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Test8
 {
-    class Swapper
+    class Swapper<T>
     {
-        public void Swap<T>(ref T a, ref T b)
+        public void Swap(ref T a, ref T b)
         {
             T temp = a;
             a = b;
             b = temp;
         }
 
-        public void Swap2<T>( T a,  T b)
+        public void Swap2<T>(T a,T b)
         {
             T temp = a;
             a = b;

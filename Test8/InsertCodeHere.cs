@@ -14,17 +14,17 @@ namespace Test8
             // Generics Test 8
 
             Swapper swapper = new Swapper();
-            int x = 12;
-            int y = 21;
-            Console.WriteLine($"Before Swap: X:{x}, Y:{y}");
-            ////swapper.Swap<int>(ref x, ref y);
-            swapper.Swap(ref x, ref y);
-            Console.WriteLine($"After Swap: X:{x}, Y:{y}");
+            //int x = 12;
+            //int y = 21;
+            //Console.WriteLine($"Before Swap: X:{x}, Y:{y}");
+            //swapper.Swap<int>(ref x, ref y);
+            ////swapper.Swap(ref x, ref y);
+            //Console.WriteLine($"After Swap: X:{x}, Y:{y}");
 
             int z = 12;
             int w = 21;
             Console.WriteLine($"Before Swap2: Z:{z}, W:{w}");
-            swapper.Swap2(z, w);
+            swapper.Swap2(z,  w);
             Console.WriteLine($"After Swap2: Z:{z}, W:{w}");
         }
     }
