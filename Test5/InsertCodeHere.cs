@@ -13,8 +13,9 @@ namespace Test5
             //Is this valid ?
             //C<Animal> ca = new C<Dog>();
 
-            ca.Get();
+            //ca.Get();
             // This should be ok!
+
             // Only an object of type Dog can be returnes, and since Dog is a sub¬class of 
             // Animal, this is a perfectly valid object to return in response 
             // to calling the Get method on ca, since this method has the return type Animal
@@ -22,6 +23,7 @@ namespace Test5
 
             // If we call:  
             //ca.Set(…); 
+
             // what type of objects will then be valid parameters ?
             // the Set method will accept any object of type Animal, 
             //including – but not limited to – Dog
@@ -30,6 +32,7 @@ namespace Test5
             //Assumption 2
             // Is this valid?
             //C<Dog> cd = new C<Animal>();
+
             //cd.Get(); //This method can only return objects of type Dog, 
             // but we may easily have an object of a different type (e.g. Cat) 
             // in the referred-to object
