@@ -31,20 +31,6 @@ namespace Test7
 
             return 0;
 
-            ////if (Name.CompareTo(other.Name) == 0)
-            ////{
-            ////    if (Weight < other.Weight) { return -1; }
-
-            ////    if (Weight > other.Weight) { return 1; }
-
-            ////    return 0;
-            ////}
-
-            //if (Name.CompareTo(other.Name)<0 ) { return -1; }
-
-            //if (Name.CompareTo(other.Name) > 0) { return 1; }
-
-            //return 0;
 
 
         }
