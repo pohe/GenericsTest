@@ -13,7 +13,7 @@ namespace Test8
             // The FIRST line of code should be BELOW this line
             // Generics Test 8
 
-            Swapper swapper = new Swapper();
+            //Swapper swapper = new Swapper();
             //int x = 12;
             //int y = 21;
             //Console.WriteLine($"Before Swap: X:{x}, Y:{y}");
@@ -21,11 +21,11 @@ namespace Test8
             ////swapper.Swap(ref x, ref y);
             //Console.WriteLine($"After Swap: X:{x}, Y:{y}");
 
-            int z = 12;
-            int w = 21;
-            Console.WriteLine($"Before Swap2: Z:{z}, W:{w}");
-            swapper.Swap2(z,  w);
-            Console.WriteLine($"After Swap2: Z:{z}, W:{w}");
+            //int z = 12;
+            //int w = 21;
+            //Console.WriteLine($"Before Swap2: Z:{z}, W:{w}");
+            //swapper.Swap2(z,  w);
+            //Console.WriteLine($"After Swap2: Z:{z}, W:{w}");
         }
     }
 }
