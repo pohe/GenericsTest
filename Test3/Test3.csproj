@@ -45,6 +45,7 @@
     <Compile Include="Cat.cs" />
     <Compile Include="Dog.cs" />
     <Compile Include="FamilyRelation.cs" />
+    <Compile Include="Human.cs" />
     <Compile Include="InsertCodeHere.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

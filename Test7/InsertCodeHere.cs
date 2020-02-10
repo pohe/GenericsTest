@@ -13,28 +13,34 @@ namespace Test7
         {
             //// The FIRST line of code should be BELOW this line
             //// Generics Test 7
-            ////List<int> integers = new List<int>();
-            ////integers.Add(12);
-            ////integers.Add(10);
-            ////foreach (int x in integers)
-            ////{
-            ////    Console.WriteLine(x);
-            ////}
-            ////integers.Sort();
-            ////foreach(int x in integers)
-            ////{
-            ////    Console.WriteLine(x);
-            ////}
+            //List<int> integers = new List<int>();
+            //integers.Add(12);
+            //integers.Add(13);
+            //integers.Add(10);
+            //foreach (int x in integers)
+            //{
+            //    Console.WriteLine(x);
+            //}
+            //integers.Sort();
+            //foreach (int x in integers)
+            //{
+            //    Console.WriteLine(x);
+            //}
 
-            //Dog d1 = new Dog("King", 70);
-            //Dog d2 = new Dog("Spot", 30);
-            //List<Animal> animals = new List<Animal>();
-            //animals.Add(d1);
-            //animals.Add(d2);
-            //animals.Add(new Dog("Rufus", 80));
-            //Console.WriteLine("Before sorting");
-            //printOutAnimals(animals);
+            Dog d1 = new Dog("King", 70);
+            Dog d2 = new Dog("Spot", 30);
+            Dog d3 = new Dog("Coco", 70);
+            List<Animal> animals = new List<Animal>();
+            animals.Add(d1);
+            animals.Add(d2);
+            animals.Add(d3);
+            animals.Add(new Dog("Rufus", 80));
+            Console.WriteLine("Before sorting");
+            printOutAnimals(animals);
 
+            animals.Sort();
+            Console.WriteLine("Efter sortering");
+            printOutAnimals(animals);
             //if (d1.CompareTo(d2) < 0)
             //    Console.WriteLine($"d1 {d1.Weight} er mindre end d2 {d2.Weight}");
             //else

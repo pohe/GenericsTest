@@ -30,6 +30,8 @@ namespace Test3
             Console.WriteLine(catRelations.ToString());
             
 
+            FamilyRelation<Human> humanRelations = new FamilyRelation<Human>(new Human("Poul"),new Human("Ejvind"), new Human("Birte") );
+
             // The LAST line of code should be ABOVE this line
         }
     }

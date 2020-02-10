@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Test7
 {
-    public class Animal: IComparable<Animal>
+    public class Animal : IComparable<Animal>
     {
         public string Name { get; set; }
         private int _weight;
@@ -25,14 +25,25 @@ namespace Test7
 
         public int CompareTo(Animal other)
         {
-            if (Weight < other.Weight) { return -1; }
+            if (Weight >other.Weight) { return -1; }
 
-            if (Weight > other.Weight) { return 1; }
+            else if (Weight < other.Weight) { return 1; }
 
-            return 0;
+            else return Name.CompareTo(other.Name);
 
-
-
+            //if (Name.CompareTo(other.Name) < 0)
+            //{
+            //    return -1;
+            //}
+            //else if (Name.CompareTo(other.Name) > 0)
+            //{
+            //    return 1;
+            //}
+            //else
+            //{
+            //    return 0;
+            //}
+            //return /*Name.CompareTo(other.Name)*/;
         }
 
         public override string ToString()
